@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'henny penny';
+    color: #9453a6;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    margin: 10px 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    transition: 1s;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.gallery img:hover {
+    filter: drop-shadow(4px 4px 6px gray);
+    transform: scale(1.1);
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-box {
+    flex: 1 0 20%;
+    margin: 10px;
+    position: relative;
+}
+
+.video-box img {
+    border-radius: 5px;
+    display: block;
+    width: 280px;
+    height: auto;
+    transition: 1s;
+}
+
+.video-box img:hover {
+    filter: drop-shadow(2px 2px 3px gray);
+    transform: scale(1.1);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.video-overlay i {
+    color: #fff;
+    font-size: 50px;
+}
+
+.video-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    z-index: 2;
+    display: none;
+}

@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #f2cc0f;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.nav-link,
+.nav-item {
+    font-family: pattaya;
+    font-size: 2.2rem;
+    columns: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px 0 30px;
+}
+
+.nav-item a:hover {
+    color: #9453a6;
+}
+
+/* ------------------------------------------- */
+footer {
+    background-color: #f2cc0f;
+    padding: 5px 20px;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer h3 {
+    font-family: 'henny penny';
+    text-align: center;
+}
+
+.socialContainer p {
+    font-family: roboto, "sans-serif";
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.lastWords {
+    flex-grow: 2;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+footer .social-icons li .icon:hover {
+    background-color: #9453a6;
+    border-radius: 35px;
+    transition: color 0.3s ease-in;
+}
+
+.icon {
+    width: 45px;
+}
+
+.copyRights {
+    align-self: flex-end;
+    flex-grow: 1;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.up {
+    align-self: flex-end;
+    flex-grow: 1;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
+.goUp {
+    color: #0d0d0d;
+    text-shadow: 1px 1px 1px #9453a6;
+    font-family: roboto, "sans-serif";
+    font-size: 1rem;
+}
